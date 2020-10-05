@@ -4,22 +4,37 @@
 	box-sizing: border-box;
 }
 
+html {
+	background: url('night-flight-2307018_1920.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 body {
+	font-family: 'Poppins', sans-serif;
+	background: darkslategray;
 	font-family: 'Poppins', sans-serif;
 }
 
 .header {
 	grid-area: header;
-	background-color: #f1f1f1;
 	padding: 30px;
 	text-align: center;
 	font-size: 35px;
+	margin-top: 10px;
+	height: 50vh;
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 .grid-container {
 	display: grid;
 	grid-template-areas: 'header header header header header header' 'left left middle middle right right'
 		'footer footer footer footer footer footer';
+	grid-gap: 30px;
+	width: 95%;
+	margin: 0 auto;
+	height: 0;
 }
 
 .left,
@@ -27,28 +42,31 @@ body {
 .right {
 	padding: 10px;
 	height: 200px;
+	font-family: 'Poppins', sans-serif;
+	color: black;
+	text-align: center;
+	font-size: 40px;
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
 .left {
-	background-color: #aaa;
 	grid-area: left;
 }
 
 .middle {
 	grid-area: middle;
-	background-color: #bbb;
 }
 
 .right {
 	grid-area: right;
-	background-color: #ccc;
 }
 
 .footer {
 	grid-area: footer;
-	background-color: #f1f1f1;
 	padding: 10px;
 	text-align: center;
+	height: 10vh;
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 600px) {
